@@ -9,7 +9,7 @@
     <!--    <link rel="stylesheet" media="(min-width:320px )and (max-width:767px)" href="./public/stylesheets/mobile.css">-->
     <!--    <link rel="stylesheet" media="(min-width:768px )and (max-width:1199px)" href="./public/stylesheets/tablet.css">-->
     <!--    <link rel="stylesheet" media="(min-width:1200px )" href="./public/stylesheets/desktop.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Nanum+Brush+Script|Exo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Nanum+Brush+Script|Exo|Nanum+Gothic|Nanum+Pen+Script" rel="stylesheet">
     <!-- <script type="text/javascript"
             src="//dapi.kakao.com/v2/maps/sdk.js?appkey=621825037a17efac957f388450f47601"></script> -->
     <script src="./public/javascripts/DDays.js"></script>
@@ -18,9 +18,9 @@
             let ddayTime = document.getElementById("time");
             let dday = new DDays('Apr 24,2019,00:00:00');
 
-            setInterval(() => {
-                ddayTime.textContent = dday.getDday()
-            }, 250);
+            // setInterval(() => {
+            //     ddayTime.textContent = dday.getDday()
+            // }, 250);
 
         }
 
@@ -48,11 +48,12 @@
         }
         */
 
-        #main-content p#wedding-title{text-align: center;font-family: 'Dancing Script', cursive;font-size: 60pt;letter-spacing: 15px;margin:2%;} 
+        #main-content p#wedding-title{text-align: center; font-family: 'Dancing Script', cursive; font-size: 60pt;letter-spacing: 15px;margin:2%;} 
 
         #main-content #wedding-invitation {height: 80%; background-color: whitesmoke; display: flex;align-items: center;justify-content: center;}
-        #main-content #wedding-invitation .invitiaion-wrap{width:90%; height: 90%; background-color: white}
-        #main-content #wedding-invitation .invitiaion-wrap .invitation-title {font-family: 'Nanum Brush Script', cursive;text-align: center;font-size: 60pt; letter-spacing: 15px;}
+        #main-content #wedding-invitation .invitiaion-wrap {width:90%; height: 90%; background-image: url('./public/images/background_2.png')}
+        #main-content #wedding-invitation .invitiaion-wrap .invitation-title {font-family: 'Nanum Brush Script', cursive;font-size: 65pt; letter-spacing: 15px;padding: 10% 0 10% 10%;}
+        #main-content #wedding-invitation .invitiaion-wrap :not(.invitation-title) { font-family: 'Nanum Pen Script', cursive; font-size:40px;padding: 2.5% 0 2.5% 10%; letter-spacing: 5px;}
 
         #main-content #main-image {
             margin: 5% 0;
@@ -150,10 +151,12 @@
        
         <div id="wedding-invitation">
             <div class="invitiaion-wrap">
-                <p class="invitation-title">wedding invitation</p>
-                <p>오래전 작은 인연이 저희를 연인으로 만들었고 지금 그 인연으로 저희 하나가 됩니다. </p>
-                <p>아직은 많이 부족하지만 늘 그 인연을 생각하며 서로 아껴주고 사랑하며 살겠습니다.</p>
-                <p> 오셔서 지켜봐 주시고 축하해 주십시오.</p>
+                <p class="invitation-title">결혼 합니다</p>
+                <p>오래전 작은 인연이 저희를 연인으로 만들었고</p>
+                <p>지금 그 인연으로 저희 하나가 됩니다. </p>
+                <p>아직은 많이 부족하지만 늘 그 인연을 생각하며</p>
+                <p>서로 아껴주고 사랑하며 살겠습니다.</p>
+                <p>오셔서 지켜봐 주시고 축하해 주십시오.</p>
             </div>
         </div>
                 
