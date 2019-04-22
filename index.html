@@ -32,6 +32,7 @@
         }
 
         html, body {
+            color: gray;
             height: 100%;
         }
 
@@ -53,16 +54,13 @@
         }
 
         #main-content #dday > p:nth-child(1){
-            /* font-family: 'Indie Flower', cursive; */
             font-family: 'Exo', sans-serif;
             font-size: 50pt;
             letter-spacing: 20px;
             margin:2%;
-            color: gray
         }
 
         #main-content #dday > p:nth-child(2) {
-            /* font-family: 'Exo', sans-serif; */
             font-family: 'Dancing Script', cursive;
             font-size: 40pt;
         }
@@ -94,6 +92,13 @@
             bottom: 0;
             height: 25%;
         }
+
+        #main-content #description .place{
+            font-family: 'Nanum Brush Script', cursive;
+            font-size: 25pt;
+          
+        } 
+
         #main-content #description .wedding-name {
             font-size: 50pt;
         }
@@ -135,15 +140,19 @@
         </div>
 
         <div id="description">
-            <div>
-                <span class="wedding-name">전정민</span>
+            <div class="groom-bride">
+                <span class="wedding-name"><sub style="font-size : 30pt">groom</sub>전정민</span>
                 <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
-                <span class="wedding-name">오은영</span>
+                <span class="wedding-name"><sub style="font-size : 30pt">bride</sub>오은영</span>
             </div>
-            <div>
+            <div class="wedding-day">
                 <p>05</p>
                 <p>-</p>
                 <p>15</p>
+            </div>
+            <div class="place">
+                <p>2020년 5월 13일 토요일 낮 12:00</p>
+                <p>그랜드 컨벤션 리젠시홀</p>
             </div>
         </div>
 
