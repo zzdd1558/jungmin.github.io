@@ -9,14 +9,14 @@
     <!--    <link rel="stylesheet" media="(min-width:320px )and (max-width:767px)" href="./public/stylesheets/mobile.css">-->
     <!--    <link rel="stylesheet" media="(min-width:768px )and (max-width:1199px)" href="./public/stylesheets/tablet.css">-->
     <!--    <link rel="stylesheet" media="(min-width:1200px )" href="./public/stylesheets/desktop.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Nanum+Brush+Script|Exo" rel="stylesheet">
-    <script type="text/javascript"
-            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=621825037a17efac957f388450f47601"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Nanum+Brush+Script|Exo" rel="stylesheet">
+    <!-- <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=621825037a17efac957f388450f47601"></script> -->
     <script src="./public/javascripts/DDays.js"></script>
     <script>
         window.onload = () => {
             let ddayTime = document.getElementById("time");
-            let dday = new DDays('Apr 23,2019,00:00:00');
+            let dday = new DDays('Apr 24,2019,00:00:00');
 
             setInterval(() => {
                 ddayTime.textContent = dday.getDday()
@@ -49,7 +49,6 @@
         #main-content #dday {
             position: relative;
             text-align: center;
-            height: 10%;
             margin: 5% 0;
         }
 
@@ -70,11 +69,16 @@
             font-size: 30pt;
         }
 
+        #main-content .wedding-invitation {
+            font-family: 'Nanum Brush Script', cursive;
+            text-align: center;
+            font-size: 30pt;
+        }
+
         #main-content #main-image {
-            height: 40%;
+            margin: 10% 0;
             background-color: white;
             text-align: center;
-            margin: 10% 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -91,7 +95,6 @@
             font-family: 'Nanum Brush Script', cursive;
             position: relative;
             bottom: 0;
-            height: 25%;
         }
 
         #main-content #description .place{
@@ -134,6 +137,11 @@
             <p>wedding invitation</p>
             <p>D-day</p>
             <p id="time"></p>
+        </div>
+        <div class="wedding-invitation">
+            <p>오래전 작은 인연이 저희를 연인으로 만들었고 지금 그 인연으로 저희 하나가 됩니다. </p>
+            <p>아직은 많이 부족하지만 늘 그 인연을 생각하며 서로 아껴주고 사랑하며 살겠습니다.</p>
+            <p> 오셔서 지켜봐 주시고 축하해 주십시오.</p>
         </div>
 
         <div id="main-image">
