@@ -26,57 +26,36 @@
 
     </script>
     <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        html, body {
-            color: gray;
-            height: 100%;
-        }
-
-        #container {
-            height: 100%;
-        }
-
-        #main-content {
-            position: relative;
-            height: 100%;
-            background-color: white;
-        }
-
+        * {padding: 0; margin: 0; }
+        html, body {color: gray; height: 100%;}
+        #container { height: 100%;}
+        #main-content {position: relative;height: 100%;background-color: white;}
+        /* 
         #main-content #dday {
             position: relative;
             text-align: center;
             margin: 5% 0;
-        }
-
-        #main-content #dday > p:nth-child(1){
-            font-family: 'Exo', sans-serif;
-            font-size: 50pt;
-            letter-spacing: 15px;
-            margin:2%;
-        }
-
-        #main-content #dday > p:nth-child(2) {
-            font-family: 'Dancing Script', cursive;
-            font-size: 40pt;
-        }
-
+        } 
+        
         #main-content #dday > p:nth-child(3) {
             font-family: 'Nanum Brush Script', cursive;
             font-size: 30pt;
         }
 
-        #main-content .wedding-invitation {
-            font-family: 'Nanum Brush Script', cursive;
-            text-align: center;
-            font-size: 30pt;
+         #main-content #dday > p:nth-child(2) {
+            font-family: 'Dancing Script', cursive;
+            font-size: 40pt;
         }
+        */
+
+        #main-content p#wedding-title{text-align: center;font-family: 'Dancing Script', cursive;font-size: 60pt;letter-spacing: 15px;margin:2%;} 
+
+        #main-content #wedding-invitation {height: 80%; background-color: whitesmoke; display: flex;align-items: center;justify-content: center;}
+        #main-content #wedding-invitation .invitiaion-wrap{width:90%; height: 90%; background-color: white}
+        #main-content #wedding-invitation .invitiaion-wrap .invitation-title {font-family: 'Nanum Brush Script', cursive;text-align: center;font-size: 60pt; letter-spacing: 15px;}
 
         #main-content #main-image {
-            margin: 10% 0;
+            margin: 5% 0;
             background-color: white;
             text-align: center;
             display: flex;
@@ -89,6 +68,14 @@
             border-radius: 5%;
         }
 
+        #main-content .groom-bride {
+            text-align: center;
+            font-size: 40pt;
+            font-family: 'Nanum Brush Script', cursive;
+            position: relative;
+            bottom: 0;
+        }
+
         #main-content #description {
             text-align: center;
             font-size: 50pt;
@@ -97,33 +84,42 @@
             bottom: 0;
         }
 
-        #main-content #description .place{
+        #main-content .place{
+            margin: 5% 0;
+            text-align: center;
             font-family: 'Nanum Brush Script', cursive;
             font-size: 40pt;
           
         } 
 
-        #main-content #description .wedding-name {
+        #main-content .wedding-name {
+            text-align: center;
             font-size: 50pt;
+            font-family: 'Nanum Brush Script', cursive;
+            position: relative;
+            bottom: 0;
+            font-size: 70pt;
         }
         #main-content #description > div {
             margin: 3%;
         }
 
+
+
         #gallery-content {
-            height: 100%;
+            
             background-color: red;
         }
 
         #map-content {
-            height: 100%;
+            
             margin: 0 auto;
         }
 
         #map-wrap #map {
             display: inline-block;
             width: 100%;
-            height: 100%;
+            
         }
 
     </style>
@@ -133,40 +129,51 @@
 <div id="container">
     <!-- main -->
     <div id="main-content">
-        <div id="dday">
-            <p>wedding invitation</p>
-            <p>D-day</p>
-            <p id="time"></p>
-        </div>
-        <div class="wedding-invitation">
-            <p>오래전 작은 인연이 저희를 연인으로 만들었고 지금 그 인연으로 저희 하나가 됩니다. </p>
-            <p>아직은 많이 부족하지만 늘 그 인연을 생각하며 서로 아껴주고 사랑하며 살겠습니다.</p>
-            <p> 오셔서 지켜봐 주시고 축하해 주십시오.</p>
+
+        <p id="wedding-title">wedding day</p>
+
+        <div class="groom-bride">
+            <span class="wedding-name"><sub style="font-size : 30pt">groom</sub>전정민</span>
+            <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+            <span class="wedding-name"><sub style="font-size : 30pt">bride</sub>오은영</span>
         </div>
 
+        <div class="place">
+            <p>2020년 5월 13일 토요일 낮 12:00</p>
+            <p>그랜드 컨벤션 리젠시홀</p>
+        </div>
+        
         <div id="main-image">
-            <img src="./public/images/test.jpg">
+            <img src="./public/images/thumnail.jpeg">
         </div>
 
-        <div id="description">
-            <div class="groom-bride">
-                <span class="wedding-name"><sub style="font-size : 30pt">groom</sub>전정민</span>
-                <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
-                <span class="wedding-name"><sub style="font-size : 30pt">bride</sub>오은영</span>
+       
+        <div id="wedding-invitation">
+            <div class="invitiaion-wrap">
+                <p class="invitation-title">wedding invitation</p>
+                <p>오래전 작은 인연이 저희를 연인으로 만들었고 지금 그 인연으로 저희 하나가 됩니다. </p>
+                <p>아직은 많이 부족하지만 늘 그 인연을 생각하며 서로 아껴주고 사랑하며 살겠습니다.</p>
+                <p> 오셔서 지켜봐 주시고 축하해 주십시오.</p>
             </div>
+        </div>
+                
+        <!-- <div id="description">
+            
             <div class="wedding-day">
                 <p>05</p>
                 <p>-</p>
                 <p>15</p>
             </div>
-            <div class="place">
-                <p>2020년 5월 13일 토요일 낮 12:00</p>
-                <p>그랜드 컨벤션 리젠시홀</p>
-            </div>
-        </div>
-
+            
+        </div> -->
+    
     </div>
 
+    <!-- <div id="dday">
+            <p>wedding day</p>
+            <p>D-day</p>
+            <p id="time"></p>
+        </div> -->
     <!-- photo -->
     <div id="gallery-content"></div>
 
